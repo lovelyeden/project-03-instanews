@@ -15,8 +15,10 @@ section img {
   width:350px;
 
 
- 
+  
 }
+ 
+
 section {
   display: flex;
   justify-content: center;
@@ -32,9 +34,9 @@ section {
 .site-logo {
   
 }
-section p {
-  color: white;
-}
+/* section p {
+  color: white; */
+
 /* Footer */
 footer p {
   position:fixed; 
