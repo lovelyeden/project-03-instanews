@@ -11,13 +11,24 @@ body {
 }
 
 /* Page Main Logo Section */
+ul{
+  list-style: none;
+}
 section img {
   width:350px;
-
-
-  
 }
- 
+.choose-section h2{
+  color: white;
+}
+/* }
+section p{
+  color:white; */
+
+.list-article{
+  font: 16px;
+  color: white;
+}
+
 
 section {
   display: flex;
@@ -39,7 +50,7 @@ section {
 
 /* Footer */
 footer p {
-  position:fixed; 
+  position: relative; 
   text-align: center;
   left: 0;
   bottom:4%;
