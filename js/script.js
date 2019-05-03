@@ -25,7 +25,7 @@
 
             const articleWrap = `
           <li class="list-article">
-          <h2><a href="" target="_blank"> ${article.title} <a/></h2>
+          <div class="news"><a href="" target="_blank"> ${article.title} <a/></div>
           <p>Author: ${article.author}</p>
           <p>Author: ${article.abstract}</p>
           <img src="${article.multimedia[4].url}" >
