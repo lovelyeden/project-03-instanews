@@ -9,7 +9,7 @@
     /**
      * Change event for select list and call .ajax
      */
-    $('#choose-section-menu').on('change', function() {
+    $('#choose-menu').on('change', function() {
       const selected = $(this).val();
       if (selected !== '') {
         console.log('The value you picked is: ' + selected);
@@ -24,14 +24,15 @@
             console.log(article);
 
             const articleWrap = `
-          <li class="list-article">
-          <div class="news"><a href="" target="_blank"> ${article.title} <a/></div>
-          <p>Author: ${article.author}</p>
-          <p>Author: ${article.abstract}</p>
-          <img src="${article.multimedia[4].url}" >
+          <li class="list-article" style="background-image:url(${article.multimedia[4].url}); background-size: cover;">
+          <a href=${article.url} "target="_blank" >
+          <div class="stories-container">
+          <p>${article.abstract}</p>
+          </div>
+          </a>
           </li>
   `;
-  $('.article').append(articleWrap);
+  $('ul').append(articleWrap);
 });
 
             

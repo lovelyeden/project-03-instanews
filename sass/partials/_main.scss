@@ -1,4 +1,25 @@
-body{
+body {
     background: black;
-    
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: white;
+}
+.choose-section{
+    color:white;
+}
+select{
+    color:black;
+    background: white;
+}
+li{
+    color: white;
+    list-style: none;
+}
+/*This is a test*/
+.article-container{
+color:white;
+}
+
+.list-article {
+    min-height: 300px;
 }
