@@ -1,25 +1,115 @@
-body {
-    background: black;
-    font-family: 'Open Sans';
+*   {
+    box-sizing: border-box;
+    border: solid 1px yellow;
+}
+html    {
     font-size: 16px;
-    color: white;
+}
+    body {
+    background: black;
+    color:#ffffff;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin:0;
+}
+li  {
+    list-style: none;
+}
+img {
+    max-width:100%;
+}
+
+
+/*This is Header*/
+header  {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+.site-logo {
+    width: 300px;
+    margin-bottom: 1rem;
+    text-align: center;
+
 }
 .choose-section{
     color:white;
+    width: 300px;
+    text-align: center;
+}
+.choose-section p{
+    margin-bottom:1em;
+    margin-top: 0;
 }
 select{
     color:black;
     background: white;
 }
-li{
-    color: white;
-    list-style: none;
-}
-/*This is a test*/
-.article-container{
-color:white;
+option{
+    font-size: 1.5em;
+    font-weight:normal;
 }
 
-.list-article {
+
+/*This is Select section*/
+li{
+    color: white;
+    max-width: 100%;
+    flex: 0 1 100%;
+}
+
+ul {
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+.stories-article .article-container{
+position: relative;
+display: block;
+width: 100%;
+height: 420px;
+background-position: 50%;
+background-size: cover;
+}
+a{
+    text-decoration-line: none;
+    color:white;
     min-height: 300px;
+}
+
+.article-container{
+    min-height: 300px;
+}
+
+
+.stories-container{
+    display: flex;
+    position: absolute;
+    bottom:0;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+
+
+
+}
+footer{
+    text-align: center;
+    margin-bottom: 3em;
+    color:#c2c2c2;
+
+}
+
+/* Media Query for tablet:600px screen sizes */
+
+@media screen and (min-width: 480px) {
+li{
+       max-width: 50%;
+}
 }
