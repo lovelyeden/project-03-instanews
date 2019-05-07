@@ -1,6 +1,6 @@
 *   {
     box-sizing: border-box;
-    border: solid 1px yellow;
+    // border: solid 1px yellow;
 }
 html    {
     font-size: 16px;
@@ -17,11 +17,11 @@ li  {
 }
 img {
     max-width:100%;
+    height: auto;
 }
 
-
 /*This is Header*/
-header  {
+.site-header  {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -30,9 +30,11 @@ header  {
     align-content: center;
     align-items: center;
     height: 100%;
+    flex-grow: 0;
+    transition: .5s;
 }
 .site-logo {
-    width: 300px;
+    width: 150px;
     margin-bottom: 1rem;
     text-align: center;
 
@@ -53,8 +55,23 @@ select{
 option{
     font-size: 1.5em;
     font-weight:normal;
+
+/*this is a trial for on change event*/
+  }
+    .main-article {
+        background:yellowgreen;
+ 
+      }
+
+.shrink {
+  flex-grow: 0;
+  height: 50%;
 }
 
+.grow {
+  flex-grow: 1;
+}
+/*this is a trial for on change event*/
 
 /*This is Select section*/
 li{
@@ -109,7 +126,18 @@ footer{
 /* Media Query for tablet:600px screen sizes */
 
 @media screen and (min-width: 480px) {
-li{
+    li  {
        max-width: 50%;
 }
+}
+@media screen and (min-width: 600px) {
+    .site-header  {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1000px) {
+    li  {
+        max-width: 25%;
+    }
 }
