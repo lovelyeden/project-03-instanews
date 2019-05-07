@@ -5,7 +5,7 @@
 html    {
     font-size: 16px;
 }
-    body {
+body {
     background: black;
     color:#ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -24,25 +24,21 @@ img {
 
 /*This is Header*/
 .site-header  {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    // height: 100%;
     flex-grow: 1;
     transition: .5s;
 }
 .site-logo {
-    width: 150px;
+    width: 300px;
     margin-bottom: 1rem;
     text-align: center;
-
 }
 .choose-section{
-    color:white;
     width: 300px;
     text-align: center;
 }
@@ -67,7 +63,8 @@ option{
 
 .shrink {
   flex-grow: 0;
-//   height: 50%;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .grow {
@@ -137,6 +134,10 @@ footer{
     .site-header  {
         flex-direction: row;
         text-align: left;
+        justify-content: center;
+    .choose-section .site-logo{
+      width: 10%;
+    }
     }
 }
 @media screen and (min-width: 1000px) {

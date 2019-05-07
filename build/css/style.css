@@ -365,7 +365,6 @@ img {
 
 /*This is Header*/
 .site-header {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,12 +389,11 @@ img {
   transition: .5s; }
 
 .site-logo {
-  width: 150px;
+  width: 300px;
   margin-bottom: 1rem;
   text-align: center; }
 
 .choose-section {
-  color: white;
   width: 300px;
   text-align: center; }
 
@@ -415,7 +413,9 @@ option {
 .shrink {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
-          flex-grow: 0; }
+          flex-grow: 0;
+  margin-bottom: 1em;
+  margin-top: 1em; }
 
 .grow {
   -webkit-box-flex: 1;
@@ -484,7 +484,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    text-align: left; } }
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .site-header .choose-section .site-logo {
+      width: 10%; } }
 
 @media screen and (min-width: 1000px) {
   li {

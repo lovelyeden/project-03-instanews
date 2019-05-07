@@ -6,9 +6,7 @@
      
   
   
-    /**
-     * Change event for select list and call .ajax
-     */
+    /* Change event for select list and call .ajax */
     $('#choose-menu').on('change', function() {
       $('.site-header').addClass('shrink');
       $('.main-article').addClass('grow');
@@ -21,23 +19,19 @@
  
 
 
-
         $.ajax({
           method: "get",
           url: "https://api.nytimes.com/svc/topstories/v2/"+selected+".json?api-key=s5AF7dJT7Aw8VOkkVQ0g0LSWD8xiwxp2"
         }).done(function(data) {
-          console.log(data); 
+          const articleFiltered = data.results.filter(function(stories){
+          return stories.multimedia[4] !==  undefined;
+          }).slice(0,12);
           $('ul').html('');
+          $.each(articleFiltered, function( index, article ){
+          console.log(article);
          
-          
-          // filter data.results
-          //put slice the filtered data.results, this will be a new array
-          $.each(data.results, function( index, article ){
-            console.log(article);
-         
-       
 
-            const articleWrap = `
+          const articleWrap = `
           <li class="list-article">
           <a href=${article.url} >
           <div class="article-container "target="_blank" style="background-image:url(${article.multimedia[4].url}); background-size: cover;">
@@ -48,7 +42,6 @@
           </a>
           </li>
   `;
- 
   $('ul').append(articleWrap);
 });
 
