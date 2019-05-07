@@ -17,7 +17,8 @@
         console.log('The value you picked is: ' + selected);
       //on change 
  
-
+        $('.loader').show();
+  
 
         $.ajax({
           method: "get",
@@ -44,14 +45,21 @@
   `;
   $('ul').append(articleWrap);
 });
-
+})
+.fail(function() {
+//    $('.user-name').append('Sorry there was an error.');
+})
+.always(function(){
+  $('.loader').hide();
+});
             
 
 
 
 
       
-        });
+
+        
 
         // loadArticles(selected);
         // $('.articles').append();
