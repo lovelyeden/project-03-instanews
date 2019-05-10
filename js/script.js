@@ -33,11 +33,10 @@
          
 
           const articleWrap = `
-          <li class="list-article">
-          <a href=${article.url} >
-          <div class="article-container "target="_blank" style="background-image:url(${article.multimedia[4].url}); background-size: cover;">
+          <li class="list-article" style="background-image:url(${article.multimedia[4].url}); background-size: cover;">
+          <a href=${article.url} "target="_blank">
           <div class="stories-container">
-          <p>${article.abstract}</p>
+          <p class="headlines">${article.abstract}</p>
           </div>
           </div>
           </a>
@@ -47,10 +46,11 @@
 });
 })
 .fail(function() {
-//    $('.user-name').append('Sorry there was an error.');
+$('.main-article').append('<p class="error">Sorry there was an error in loading the page.</p>');
 })
 .always(function(){
   $('.loader').hide();
+
 });
             
 
