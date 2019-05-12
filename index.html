@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,20 +7,17 @@
     <title>Instanews</title>
 
     <link rel="stylesheet" href="./build/css/style.min.css">
-   
 </head>
 
 <body>
+    
     <header class="site-header">
         <div class="site-logo">
             <img src="images/nyt-logo.svg" alt="New York Times logo">
         </div>
         
-        
         <div class="choose-section">
-      
             <p>Choose a section:</p>
-            <img class="loader" src="./images/ajax-loader.gif" alt="loading" >
             <select class="choose-menu" id="choose-menu">
             <option value=" ">Sections...</option>
             <option value="travel">Travel</option>
@@ -32,29 +29,26 @@
             </select>
 
         </div>
-    </header>
+    </header> 
+      
 
-
+    <img class="loader" src="./images/ajax-loader.gif" alt="loading">
     <section class="main-article">
-        <div class="stories-article">  
+       <div class="article-wrapper">
         <ul>
-        <!--This is Stories-->
+        <!--This is for article-->
         </ul>
         </div>
-        
     </section>
     
     <footer>
         <div class="copyright">
             <p> &copy; Copyright 2016 INSTANEWS</p>
-         </div>
+        </div>
     </footer>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="./build/js/script.min.js"></script>
     
 </body>
-
-
-
 </html>
