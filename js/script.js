@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 
 $("#choose-menu").on("change", function(event) {
    event.preventDefault();
