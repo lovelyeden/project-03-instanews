@@ -1,25 +1,44 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   body {
     background: black;
-    color: #ffffff;
+    color: $text-white;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* Header Section */
     .site-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       text-align: center;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      flex-grow: 1;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       &.shrink {
         .site-logo img {
           width: 150px;
@@ -31,10 +50,15 @@ html {
         }
       }
       @include tablet {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
       }
       @include desktop {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         .site-logo img {
           margin-left: 1em;
           margin-right: 5em;
@@ -49,25 +73,46 @@ html {
 
     /* Main-Article Section */
     .main-article {
+      .error {
+        text-align: center;
+      }
       &.grow {
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
       }
       .article-wrapper {
         ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          justify-content: center;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           list-style: none;
           padding: 0;
           max-width: 100%;
           @include mobile {
           }
           .list-article {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             min-height: 310px;
             width: 100%;
             @include mobile {
@@ -82,7 +127,7 @@ html {
             a {
               position: relative;
               text-decoration: none;
-              color: white;
+              color: $text-white;
               height: 400px;
               background-position: 50%;
               background: cover;
@@ -91,6 +136,9 @@ html {
                 background: rgba(0, 0, 0, 0.6);
                 bottom: 0;
                 width: 100%;
+                &:hover {
+                  background: blue;
+                }
               }
             }
           }
@@ -114,7 +162,9 @@ html {
       text-align: center;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       height: 50px;
       width: 50px;
     }

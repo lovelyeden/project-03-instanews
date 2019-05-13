@@ -1,13 +1,14 @@
-/* Change event for select list and call .ajax */
-$("#choose-menu").on("change", function() {
+$(document).ready(function(){
+
+$("#choose-menu").on("change", function(event) {
+   event.preventDefault();
   $(".site-header").addClass("shrink");
   $(".main-article").addClass("grow");
-
+  $(".loader").show(); 
   const selected = $(this).val();
   if (selected !== "") {
     console.log("The value you picked is: " + selected);
 
-    $(".loader").show(); // A call for loader to show
 
     $.ajax({
       method: "get",
@@ -26,7 +27,7 @@ $("#choose-menu").on("change", function() {
         $.each(articleFiltered, function(index, article) {
           console.log(article);
 
-          //
+          
           const articleWrap = `
           <li class="list-article">
           <a href=${article.url} 
@@ -42,18 +43,19 @@ $("#choose-menu").on("change", function() {
           `;
           $("ul").append(articleWrap);
         });
-      })
+      })//end of .done function
       .fail(function() {
         $(".main-article").html("");
         $(".main-article").append(
           '<p class="error">Sorry there was an error in loading the page.</p>'
         );
-      })
+      })  
       .always(function() {
         $(".loader").hide();
       });
 
 
   } 
-}); 
+})
 
+});

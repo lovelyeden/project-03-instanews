@@ -337,7 +337,7 @@ template {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 html {
   font-size: 16px;
@@ -351,8 +351,8 @@ html {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     /* Header Section */
     /* Main-Article Section */
     /* Footer Section */
@@ -362,23 +362,23 @@ html {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       text-align: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -ms-flex-line-pack: center;
-          align-content: center;
+      align-content: center;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1; }
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
       html body .site-header.shrink .site-logo img {
         width: 150px;
         margin-top: 2em; }
@@ -390,35 +390,37 @@ html {
         html body .site-header {
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row; } }
+          -ms-flex-direction: row;
+          flex-direction: row; } }
       @media (min-width: 1000px) {
         html body .site-header {
           -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start; }
+          -ms-flex-pack: start;
+          justify-content: flex-start; }
           html body .site-header .site-logo img {
             margin-left: 1em;
             margin-right: 5em; } }
       html body .site-header .site-logo .site-logo img {
         width: 100%; }
+    html body .main-article .error {
+      text-align: center; }
     html body .main-article.grow {
       -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1; }
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
     html body .main-article .article-wrapper ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       list-style: none;
       padding: 0;
       max-width: 100%; }
@@ -428,13 +430,13 @@ html {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         min-height: 310px;
         width: 100%; }
         @media (min-width: 480px) {
@@ -449,7 +451,7 @@ html {
         html body .main-article .article-wrapper ul .list-article a {
           position: relative;
           text-decoration: none;
-          color: white;
+          color: #ffffff;
           height: 400px;
           background-position: 50%;
           background: cover; }
@@ -458,6 +460,8 @@ html {
             background: rgba(0, 0, 0, 0.6);
             bottom: 0;
             width: 100%; }
+            html body .main-article .article-wrapper ul .list-article a .stories-container:hover {
+              background: blue; }
     html body .copyright {
       text-align: center;
       color: #c2c2c2; }
@@ -472,6 +476,6 @@ html {
       left: 50%;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       height: 50px;
       width: 50px; }
