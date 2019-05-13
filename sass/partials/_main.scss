@@ -3,11 +3,11 @@
           box-sizing: border-box;
 }
 html {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-size: $base-size;
+  font-family: $font-body;
   body {
-    background: black;
-    color: $text-white;
+    background: $color-background;
+    $color-body: #ffffff;
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,7 +127,7 @@ html {
             a {
               position: relative;
               text-decoration: none;
-              color: $text-white;
+              $color-body: #ffffff;
               height: 400px;
               background-position: 50%;
               background: cover;
@@ -149,7 +149,7 @@ html {
     /* Footer Section */
     .copyright {
       text-align: center;
-      color: #c2c2c2;
+      color: $color-footer;
       @include desktop {
         text-align: left;
         margin-left: 1em;
