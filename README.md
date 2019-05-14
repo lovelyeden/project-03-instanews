@@ -16,17 +16,17 @@ Apply HTML, CSS, Javascript, Jquery, Ajax, Json and Sass.
 * sass - preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)
 
 ## Learning
-* What is gulp for and how to install it.
-* Use of jquery 
-** wrapping
--traversing the DOM
-- chaining
-- get element content
-- animation
-* How to create a error handling with the use of .fail() method
-* Fetching content from an external API
-* What an API is and how to interact with someone else's on the front-end of a website
-* How to use Sass 
-- implement basic Sass techniques like nesting, variables, mixins, and operations.
-- apply Sass language skills to writing Sass for responsive websites.
-- install Sass locally and compile it into plain vanilla CSS.
+1. What is gulp for and how to install it.
+2. Use of jquery 
+* wrapping
+* traversing the DOM
+* chaining
+* get element content
+* animation
+3. How to create a error handling with the use of .fail() method
+4. Fetching content from an external API
+5. What an API is and how to interact with someone else's on the front-end of a website
+6. How to use Sass 
+* implement basic Sass techniques like nesting, variables, mixins, and operations.
+* apply Sass language skills to writing Sass for responsive websites.
+* install Sass locally and compile it into plain vanilla CSS.
