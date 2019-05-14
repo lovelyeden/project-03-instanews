@@ -16,7 +16,7 @@ Apply HTML, CSS, Javascript, Jquery, Ajax, Json and Sass.
 * sass - preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)
 
 ## Learning
-### What is gulp for and how to install it.
+#### What is gulp for and how to install it.
 * Use of jquery 
 - wrapping
 - traversing the DOM
