@@ -18,7 +18,7 @@ Apply HTML, CSS, Javascript, Jquery, Ajax, Json and Sass.
 ## Learning
 * What is gulp for and how to install it.
 * Use of jquery 
--wrapping
+** wrapping
 -traversing the DOM
 - chaining
 - get element content
