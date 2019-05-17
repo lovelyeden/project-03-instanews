@@ -7,7 +7,7 @@ html {
   font-family: $font-body;
   body {
     background: $color-background;
-    $color-body: #ffffff;
+    color: $color-body;
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -54,6 +54,7 @@ html {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
+                
       }
       @include desktop {
         -webkit-box-pack: start;
@@ -62,6 +63,7 @@ html {
         .site-logo img {
           margin-left: 1em;
           margin-right: 5em;
+          
         }
       }
       .site-logo {
@@ -127,7 +129,7 @@ html {
             a {
               position: relative;
               text-decoration: none;
-              $color-body: #ffffff;
+              color: $color-body;
               height: 400px;
               background-position: 50%;
               background: cover;
